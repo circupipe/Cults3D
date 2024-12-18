@@ -21,25 +21,29 @@
     font-family: Barlow, sans-serif;
 }
 
-
 a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     color: var(--text);
 }
 
+body{
+    position: relative;
+
+}
+
 .menu{
- 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: var(--bg-3);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
 }
 .nav{
-    position: fixed;
-    top: 0;
-    z-index: 1;
     width: 90rem;
     height: 2.6rem;
     color: var(--text);
@@ -96,7 +100,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     left: 4rem;
     font-size: .55rem;
     color: var(--bg-1);
-    padding: 1rem
+    padding: 1rem;
 }
 
 .chevron:active{
@@ -140,7 +144,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 }
 
 .search:hover{
-    border: 1px solid var(--bg-1);
+    border: 1px  var(--bg-1);
     border-radius: 4px;
     box-shadow:0px 0px 10px var(--bg-1);
     background-color: #fff;
@@ -148,19 +152,14 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 
 .search:active{
     background-color: #fff;
-    border: 1px solid var(--bg-1);
+    border: 1px  var(--bg-1);
     border-radius: 4px;
     box-shadow:
     0px 0px 20px var(--bg-1)
 }
 
-.search::selection{
-    background-color: greenyellow;
-    color: tomato;
-}
-
 .search input {
-    border: 1px solid var(--border);
+    border: 1px  var(--border);
     border-radius: 4px;
     width: 19rem;
     height: 2rem;
@@ -233,7 +232,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 }
 
 .violet img{
-    width: 4rem;
+    width: 5rem;
     height: auto;
 }
 
@@ -248,11 +247,27 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     letter-spacing: 0.05rem;
     word-spacing: 0.25em;
     line-height: 1.4;
+
 }
 
 
-
 /* MAINnnnnNNNnnnNNN */
+.titulo-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h2{
+    color: var(--bg-1);
+    width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-transform: uppercase; 
+    padding: 1rem 0rem .0rem .5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
 
 .main{
     display: flex;
@@ -261,7 +276,6 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     font-size: 1.25rem;
 
 }
-
 
 .articulo-1{
     max-width: 68rem;
@@ -282,20 +296,93 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     max-width: 100%;
     height: auto;
     border: 1px solid var(--bg);
+    border-radius: 6px;
+}
+
+.border-primary:hover{
+    border: 1px solid var(--bg-1);
+    
+    
+}
+
+.descripcion-articulo{
+    font-size: 15px;
+    width: 25%;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem; 
+}
+
+.titart{
+    font-size: 1.1rem;
+    text-transform: uppercase; 
+    text-decoration: underline;
+    color: var(--bg-1);
+}
+
+.autor{
+    color: var(--text);
+}
+
+.autor a{
+    text-decoration: underline;
+    color: var(--bg-1);
+}
+
+.download{
+    width: fit-content;
+    padding: .5rem;
     border-radius: 4px;
+    text-transform: uppercase; 
+    font-size: .75rem;
+    color: var(--bg);
+    background-color: var(--bg-1);
 }
 
 
-
-.descripcion-articulo{
- /*    margin 1rem */
-    font-size: 15px;
-    width: 25%;
+.publis{
     display: flex;
-    flex-direction: column;
- /*    align-items: center; */
-    justify-content: space-between;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
 
-    
+.gridpublis{
+    max-width: var(--max-width);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.listapublis{
+    border-radius: 6px;
+    height: min-content;
+
+}
+
+.imgpublis{
+    max-width: 32rem;
+    border: 1px solid var(--bg-2);
+    border-radius: 6px;
+}
+
+.imgpublis:hover{
+    border-color: #822EF5;
+}
+
+.textpublis{
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: .8rem;
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: .2rem;
+    margin: 1px;
+    border-end-start-radius: 6px;
+    border-end-end-radius: 6px;
+    position: relative;
+    top: -1.7rem;
+    max-width: 32rem;
 }
