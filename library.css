@@ -9,6 +9,11 @@
     --bg-3: white;
     --border: #e6e6e6;
     --max-width: 67rem;
+    --bgt: tomato ;
+    --bgt-1: violet;
+    --bgt-2: green;
+    --bgt-3: blue;
+    --container-width: min(100vw, var(--max-width));
 
 }
 
@@ -26,3 +31,31 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 }
 
 
+.flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.width-90{
+    width: 90%;
+}
+
+
+.max-width{
+    max-width: var(--max-width);
+}
+
+.cardiseños{
+    width: 15rem;
+}
