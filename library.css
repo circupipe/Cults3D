@@ -56,6 +56,3 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     max-width: var(--max-width);
 }
 
-.cardiseños{
-    width: 15rem;
-}
