@@ -390,15 +390,17 @@ body{
 
 
 
-.diseños{
-    background-color: chartreuse;
-}
-
-.listadiseños{
-    background-color: tomato;
-
-}
-
-.cardiseños{
-    width: 15rem;
+.textdiseño{
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: .8rem;
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: .2rem;
+    margin: 1px;
+    border-end-start-radius: 6px;
+    border-end-end-radius: 6px;
+    position: relative;
+    top: -1.4rem;
+    transform: translateY(-50%, -50% );
+    max-width: 32rem;
 }
